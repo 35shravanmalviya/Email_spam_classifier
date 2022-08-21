@@ -20,7 +20,7 @@ def myForm():
         # print(uname,email,cnumber,password)
         ins = '''insert into UserInfo(uname,email,cnumber,password)
                                                     values('{}','{}','{}','{}')
-                                              '''.format(uname,email,cnumber,password)
+                                              '''.format(uname,email,int(cnumber),password)
         cursor.execute(ins)
         con.commit()
     return render_template('signup.html')
