@@ -1,0 +1,2 @@
+# Email_spam_classifier
+Internet users often face problem of spam emails in their inbox. Spam emails are junk emails that are basically send to manipulate the user. The Email Spam Filtering System is a set of Email tagged messages that have been collected for Email spam research. User can log in/sign up to website and can check whether their email is ham or spam. It will help them to filter out their emails. Also they can cross check their emails to ensure that they are writing legitimate email.
