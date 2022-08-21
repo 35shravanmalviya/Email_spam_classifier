@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Spam Classifier</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+    body {
+  margin-top: 60px;
+}
+
+
+.container .jumbotron {
+    border-radius: 20px ;
+}
+
+.jumbotron{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.367);
+}
+
+#text_area{
+    border: none;
+    background-color: rgba(224, 224, 224, 0.766);
+    border-radius: 5px;
+    /* padding-left: 5px; */
+}
+
+textarea {
+    border: none;
+    outline: none;
+}
+
+#button{
+    background: linear-gradient(45deg,#fbb040, #f9ed32);
+    color: #fff;
+    width: 130px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#button:hover{
+    background: linear-gradient(45deg, #fda522, #faed30);
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.032);
+}
+
+</style>
+<body>
+    <div class="container" >
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1 class="text-center" style="color: #fae630;">Welcome to SpamWorld</h1>
+              <h2 class="text-center"><em>Email Spam Classifier</em></h2>
+                <form action="/result" method="post">
+               <h3 class="text-center">Enter Your Email</h3>
+                <h1>{{result}}</h1>
+               <textarea name="emailtext" class="textinput" id="text_area" cols="132" rows="10" placeholder=" Start Typing ...." ></textarea>
+               <br>
+               <input type="submit" id="button" title="submit" class="text-center" value="predict">
+                </form>
+
+
+            </div>
+          </div>
+        </div>
+        <footer class="text-center">
+          <hr>
+          <p> Coded & Designed By <a href="https://www.linkedin.com/in/shravanmalviya/" target="_blank">Shravan Malviya</a>.</p>
+        </footer>
+      </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login to Your Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    Bootstrap 4 CDN link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--    font awesome 5 cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!--    css page link-->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container"> <!-- bootstrap class container -->
+        <div class="myCard"> <!--Our custom class-->
+            <div class="row">
+                <div class="col-md-6"> <!--because we want our design on half screen only not on full screen-->
+                    <div class="myLeftCtn">
+                        <form class="myFormStyle text-center" action="/signin" method="post"> <!--another bootstrap class-->
+                            <header> Jump Start, Login</header>
+
+                            <div class="form-group">
+                                <i class="fas fa-user"></i>
+                                <input class="myInput "type="text" name="uname" placeholder="Username" id="username" required>
+<!--                                <div class="invalid_feedback">Please fill out this field</div>-->
+                            </div>
+
+<!--                            <div class="form-group">-->
+<!--                                <i class="fas fa-envelope"> </i>-->
+<!--                                <input class="myInput" placeholder="Email" type="text" id="email" required>-->
+<!--                            </div>-->
+
+<!--                            <div class="form-group">-->
+<!--                                <i class="fa fa-address-book"> </i>-->
+<!--                                <input class="myInput" placeholder="Contact Number" type="number" id="number" required>-->
+<!--                            </div>-->
+
+                            <div class="form-group">
+                                <i class="fas fa-lock"> </i>
+                                <input class="myInput" placeholder="Password" name="password" type="password" id="password" required>
+                            </div>
+
+                            <div class="form-group">
+<!--                                <label>-->
+<!--                                    <input id="check_1" name="check_1" type="checkbox" required>-->
+<!--                                    <small>I read and agree to Terms & Conditions</small>-->
+<!--                                    <div class="invalid-feedback">-->
+<!--                                        You must check the box-->
+<!--                                    </div>-->
+<!--                                </label>-->
+
+                            </div>
+
+                            <input type="submit" class="butt" value="LOGIN">
+                            <br>
+                            <small style="font-size:10px">Don't Have an Account? <a href="/myForm" > Sign Up </a> </small>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <!-- On Other Half Info About Email Spam Filter  (other md-6 part)-->
+
+                <div class="col-md-6">
+                    <div class="myRightCtn">
+                        <div class="box"><header>Welcome To Spamworld</header>
+
+                            <p>
+                                The Email Spam Filtering System is a set of Email tagged messages that have been collected for Email spam research. It contains one set of Email messages in English of 5,574 messages, tagged according to being Ham(legitimate) or spam.
+
+                            </p>
+                            <input type="button" class="butt_out" value="Learn More">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="text-center">
+          <hr>
+          <p>Coded & Designed By <a href="https://www.linkedin.com/in/shravanmalviya/" target="_blank">Shravan Malviya</a>.</p>
+        </footer>
+
+    </div>
+
+
+
+<!--jquery link-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!--popper.js link-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!--bootstrap js link-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
