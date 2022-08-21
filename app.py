@@ -3,7 +3,8 @@ from flask import Flask, render_template, request
 import psycopg2
 
 # con = cx_Oracle.connect("hr/hr@localhost:1521/xe")
-con="postgresql://qjexkzwvldznoc:db906085e24b59ec585b760df1a4850ac89394849c3808098a0f2b5e810b661a@ec2-34-234-240-121.compute-1.amazonaws.com:5432/d1skrr0ji02sfm"
+db_url="postgresql://qjexkzwvldznoc:db906085e24b59ec585b760df1a4850ac89394849c3808098a0f2b5e810b661a@ec2-34-234-240-121.compute-1.amazonaws.com:5432/d1skrr0ji02sfm"
+con = psycopg2.connect(db_url)
 cursor = con.cursor()
 app = Flask(__name__)
 
